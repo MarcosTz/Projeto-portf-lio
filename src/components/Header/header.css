@@ -1,0 +1,98 @@
+.header {
+  width: 100%;
+  padding: 20px 30px;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1000;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.logo-link {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #edbcbc;
+}
+
+/*Logo nome */
+.logo-link {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+
+.logo-link:hover {
+  color: #edbcbc;
+}
+
+
+.logo-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #eda8a8;
+  transition: width 0.3s ease;
+}
+
+.logo-link:hover::after {
+  width: 100%;
+}
+
+/* celular */
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    z-index: 1000;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+}

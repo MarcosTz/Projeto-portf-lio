@@ -1,0 +1,16 @@
+/* Estilizando o título */
+h1 {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilizando o texto */
+  p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+  }
+

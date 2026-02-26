@@ -1,0 +1,13 @@
+.text-and-image-container {
+  text-align: center;
+}
+
+.text-and-image-container p {
+  font-size: 18px;
+  color: #333;
+}
+
+.text-and-image-container img {
+  max-width: 100%;
+  height: auto;
+}
