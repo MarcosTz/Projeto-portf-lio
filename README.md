@@ -17,6 +17,7 @@ React.js • React Router • Bootstrap • CSS
 ## ▶ Como executar
 
 ```bash
+Set-ExecutionPolicy RemoteSigned
 npm install
 npm start
 
