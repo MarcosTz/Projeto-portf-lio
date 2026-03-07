@@ -22,6 +22,5 @@ npm start
 
 Caso apareça erro no `npm install` no Windows, abra o **PowerShell como administrador** e execute:
 
-```powershell
 Set-ExecutionPolicy RemoteSigned
 
