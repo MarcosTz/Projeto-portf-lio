@@ -1,0 +1,37 @@
+.servicos-hero {
+  padding: 40px 0 24px;
+  text-align: left;
+}
+
+.servicos-hero .button {
+  margin-top: 12px;
+}
+
+.packages {
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid var(--stroke);
+  border-bottom: 1px solid var(--stroke);
+}
+
+.plan {
+  display: grid;
+  gap: 12px;
+}
+
+.plan-price {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.plan ul {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.plan li::before {
+  content: "•";
+  color: var(--accent);
+  margin-right: 8px;
+}
+

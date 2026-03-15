@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg: #0b0f16;
+  --surface: rgba(157, 190, 225, 0.477);
+  --surface-soft: rgba(157, 190, 225, 0.804);
+  --text: #ffffff;
+  --muted: #a8b0bf;
+  --accent: #4da3ff;
+  --accent-2: #4da3ff;
+  --stroke: rgba(126, 173, 223, 0.719);
+  --shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+main {
+  padding: 80px 20px 40px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 32px;
+}
+
+.section-title {
+  font-size: clamp(28px, 3vw, 40px);
+  margin-bottom: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.section-subtitle {
+  color: rgb(0, 0, 0);
+  max-width: 720px;
+}
+
+.button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #0b0b0b;
+}
+
+.button.primary {
+  background: var(--accent);
+}
+
+.button.secondary {
+  background: transparent;
+  border: 1px solid var(--stroke);
+  color: #0b0b0b;
+}
+
+.button:hover {
+  box-shadow: 0 4px 10px rgba(77, 163, 255, 0.15);
+}
+
+.tag {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba(77, 163, 255, 0.16);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--stroke);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.grid-2 {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.grid-3 {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.fade-in {
+  animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    padding-top: 50px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+}
+

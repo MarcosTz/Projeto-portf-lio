@@ -1,0 +1,68 @@
+﻿.sobre-hero {
+  padding-top: 20px;
+}
+
+.sobre-card {
+  background: var(--surface);
+  border: 1px solid var(--stroke);
+  border-radius: 12px;
+  padding: 9px;
+}
+
+.sobre-card ul {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+  list-style: none;
+}
+
+.sobre-card li::before {
+  content: "•";
+  color: #4261c7d8;
+  margin-right: 8px;
+}
+
+.timeline {
+  background: #bcc4dfd8;
+  border-radius: 12px ;
+  border: 1px solid #000000d8;
+  margin: 0 20px;
+}
+
+.timeline-list {
+  display: grid;
+  gap: 16px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 16px;
+  align-items: center;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #000000d8;
+  background: #bcc4dfd8;;
+}
+
+.timeline-item span {
+  color: #000000;;
+  font-weight: 700;
+}
+
+.sobre-cta {
+  align-items: center;
+  grid-template-columns: 1fr auto;
+}
+
+@media (max-width: 700px) {
+  .timeline,
+  .skills {
+    margin: 0 12px;
+  }
+
+  .sobre-cta {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
